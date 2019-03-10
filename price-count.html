@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/exercise.js"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .products-cover {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            width:75%;
+            max-width: 1000px;
+        }
+
+        .product-item {
+            width: 25%;
+            padding: 8px;
+            text-align: center;
+            border: 1px solid #f5f5f5;
+            transition: all .5s ease;
+            -webkit-transition: all .5s ease;
+        }
+
+        .product-item:hover {
+            -webkit-box-shadow: -2px 0px 73px -14px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: -2px 0px 73px -14px rgba(0, 0, 0, 0.75);
+            box-shadow: -2px 0px 73px -14px rgba(0, 0, 0, 0.75);
+        }
+
+        .product-image {
+            height: 240px;
+            overflow: hidden;
+        }
+
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: all .5s ease;
+            -webkit-transition: all .5s ease;
+        }
+
+        .product-item:hover img {
+            transform: scale(1.1);
+            -webkit-transform: scale(1.1);
+        }
+
+        .product-description {
+            color: #121212;
+            font-size: 14px;
+            text-align: left;
+        }
+
+        .product-item a {
+            text-decoration: none;
+        }
+
+        .product-price {
+            text-align: left;
+            font-weight: bold;
+        }
+        .products-sale{
+            display: flex;
+        }
+        .product-prices{
+            border:1px solid #f5f5f5;
+            min-height: 100vh;
+            width:25%;
+            padding:10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="products-sale">
+        <div class="products-cover">
+            <div class="product-item">
+                <a href="#">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1486475554424-2fa50cd59f18?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80"
+                            alt="">
+                    </div>
+                    <p class="product-description">
+                        Introducing Spectrum Mobile | Shop Mobile Phones‎
+                    </p>
+                    <p class="product-price">100$</p>
+                </a>
+            </div>
+            <div class="product-item">
+                <a href="#">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1522273500616-6b4757e4c184?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+                            alt="">
+                    </div>
+                    <p class="product-description">
+                        Introducing Spectrum Mobile | Shop Mobile Phones‎
+                    </p>
+                    <p class="product-price">210$</p>
+                </a>
+            </div>
+            <div class="product-item">
+                <a href="#">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1485170536212-67180b105ff6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+                            alt="">
+                    </div>
+                    <p class="product-description">
+                        Introducing Spectrum Mobile | Shop Mobile Phones‎
+                    </p>
+                    <p class="product-price">456$</p>
+                </a>
+            </div>
+            <div class="product-item">
+                <a href="#">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1484704849700-f032a568e944?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+                            alt="">
+                    </div>
+                    <p class="product-description">
+                        Introducing Spectrum Mobile | Shop Mobile Phones‎
+                    </p>
+                    <p class="product-price">99$</p>
+                </a>
+            </div>
+            <div class="product-item">
+                <a href="#">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1542144761-65f8c3d88af2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80"
+                            alt="">
+                    </div>
+                    <p class="product-description">
+                        Introducing Spectrum Mobile | Shop Mobile Phones‎
+                    </p>
+                    <p class="product-price">122$</p>
+                </a>
+            </div>
+            <div class="product-item">
+                <a href="#">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1541249723550-8d848d17a5ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=676&q=80"
+                            alt="">
+                    </div>
+                    <p class="product-description">
+                        Introducing Spectrum Mobile | Shop Mobile Phones‎
+                    </p>
+                    <p class="product-price">45$</p>
+                </a>
+            </div>
+            <div class="product-item">
+                <a href="#">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1541249723550-8d848d17a5ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=676&q=80"
+                            alt="">
+                    </div>
+                    <p class="product-description">
+                        Introducing Spectrum Mobile | Shop Mobile Phones‎
+                    </p>
+                    <p class="product-price">87$</p>
+                </a>
+            </div>
+            <div class="product-item">
+                <a href="#">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1534949119444-a092348af7dc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=635&q=80"
+                            alt="">
+                    </div>
+                    <p class="product-description">
+                        Introducing Spectrum Mobile | Shop Mobile Phones‎
+                    </p>
+                    <p class="product-price">200$</p>
+                </a>
+            </div>
+            <div class="product-item">
+                <a href="#">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1461141346587-763ab02bced9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1248&q=80"
+                            alt="">
+                    </div>
+                    <p class="product-description">
+                        Introducing Spectrum Mobile | Shop Mobile Phones‎
+                    </p>
+                    <p class="product-price">399$</p>
+                </a>
+            </div>
+        </div>
+        <div class="product-prices">
+            <div class="each-price"></div>
+            <div class="result"><span>Summary:</span> &nbsp; <strong class="sumary-price"></strong></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
